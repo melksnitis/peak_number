@@ -1,10 +1,10 @@
 class Peak
-  attr_accessor :array, :split_posibilitys , :split_options_count
+  attr_accessor :array, :split_possibilities , :split_options_count
 
 
   def initialize(array)
     @array = array
-    @split_posibilitys = []
+    @split_possibilities = []
     @split_options_count = 0
   end
 
@@ -14,10 +14,10 @@ class Peak
     splited_arrays = create_splited_arrays(options)
 
     splited_arrays.each_with_index do |splited_array, index|
-      @split_posibilitys << options[index] if find_peak(splited_array)
+      @split_possibilities << options[index] if find_peak(splited_array)
     end
 
-    @split_options_count = @split_posibilitys.count
+    @split_options_count = @split_possibilities.count
   end
 
   def random_array(size)

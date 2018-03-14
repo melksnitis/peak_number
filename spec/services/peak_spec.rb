@@ -21,7 +21,7 @@ describe Peak do
 
     it "array is splited in right portions" do
       peak.find_peak_options
-      expect(peak.split_posibilitys).to eq [5, 15]
+      expect(peak.split_possibilities).to eq [5, 15]
     end
 
 end
