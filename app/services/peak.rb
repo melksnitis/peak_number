@@ -1,6 +1,4 @@
 class Peak
-  # num and action are not instance variables.
-  # let me know how you were going to use these.
   attr_accessor :array, :split_posibilitys , :split_options_count
 
 
